@@ -923,9 +923,11 @@ function startPipelinePolling() {
                 pipelinePollInterval = null;
                 btnConfirm.disabled = false;
 
-                if (state.status === "SUCCESS") {
+                if (state.status === "SUCCESS" || state.status === "READY") {
                     finishBanner.classList.remove("hidden");
-                    finishBanner.textContent = "🎉 Pipeline and analytics completed successfully! Live dashboard charts refreshed.";
+                    finishBanner.textContent = "🎉 Ingestion and Lakehouse analytics verified! Dashboard telemetry synced.";
+                    finishBanner.style.background = "#DCFCE7";
+                    finishBanner.style.color = "#15803D";
                     await loadDashboardData();
                 } else {
                     finishBanner.textContent = "Pipeline execution failed. Check console output.";
