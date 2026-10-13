@@ -14,6 +14,24 @@ let activeSort = "popularity";
 let activeGenreFilter = "ALL";
 let searchQuery = "";
 
+function getIngestedTracks() {
+    try {
+        const raw = localStorage.getItem("beatdrop_ingested_tracks");
+        return raw ? JSON.parse(raw) : [];
+    } catch (_) {
+        return [];
+    }
+}
+
+function saveIngestedTrack(track) {
+    try {
+        const existing = getIngestedTracks();
+        const filtered = existing.filter(t => t.track_name.toLowerCase() !== track.track_name.toLowerCase() || t.artist_name.toLowerCase() !== track.artist_name.toLowerCase());
+        filtered.unshift(track);
+        localStorage.setItem("beatdrop_ingested_tracks", JSON.stringify(filtered.slice(0, 100)));
+    } catch (_) {}
+}
+
 // Ensure landing starts cleanly at top without restoring stale scroll offset
 if ('scrollRestoration' in history) {
     history.scrollRestoration = 'manual';
@@ -82,6 +100,14 @@ async function loadDashboardData() {
         }
     } catch (e) {
         console.warn("Catalog index load skipped:", e);
+    }
+
+    // Merge locally ingested tracks
+    const locallyIngested = getIngestedTracks();
+    if (locallyIngested.length) {
+        if (!cachedCatalogIndex.popular_tracks) cachedCatalogIndex.popular_tracks = [];
+        cachedCatalogIndex.popular_tracks = [...locallyIngested, ...cachedCatalogIndex.popular_tracks];
+        cachedTopTracks = [...locallyIngested, ...cachedTopTracks];
     }
 
     // 2. Populate Hero & KPI Cards
@@ -434,9 +460,12 @@ function renderTopTracksTable() {
     const maxRows = searchQuery ? 25 : 12;
     list.slice(0, maxRows).forEach((track, idx) => {
         const tr = document.createElement("tr");
+        const rankDisplay = track._is_newly_ingested 
+            ? `<span class="rank-badge" style="background:var(--color-green); color:#000; font-weight:900;">✨ NEW</span>` 
+            : `<span class="rank-badge">#${track.rank || (idx + 1)}</span>`;
         tr.innerHTML = `
             <td><span class="genre-tag-cell">${escapeHtml(track.genre)}</span></td>
-            <td><span class="rank-badge">#${track.rank || (idx + 1)}</span></td>
+            <td>${rankDisplay}</td>
             <td><strong>${escapeHtml(track.track_name)}</strong></td>
             <td>${escapeHtml(track.artist_name)}</td>
             <td><span class="${activeSort === 'popularity' ? 'metric-highlight' : ''}">${track.popularity}</span></td>
@@ -532,7 +561,14 @@ function initControls() {
                 if (res.ok) {
                     const data = await res.json();
                     if (data.query === searchQuery) {
-                        liveSearchTracks = data.tracks || [];
+                        const localTracks = getIngestedTracks();
+                        const q = searchQuery.toLowerCase();
+                        const matchingLocal = localTracks.filter(t => {
+                            if (activeGenreFilter !== "ALL" && (t.genre || "").toUpperCase() !== activeGenreFilter) return false;
+                            return (t.track_name.toLowerCase().includes(q) || t.artist_name.toLowerCase().includes(q) || (t.album_name || "").toLowerCase().includes(q));
+                        });
+                        const serverTracks = (data.tracks || []).filter(t => !matchingLocal.some(lt => lt.track_name.toLowerCase() === t.track_name.toLowerCase()));
+                        liveSearchTracks = [...matchingLocal, ...serverTracks];
                         liveSearchArtists = data.artists || [];
                         applyFiltersAndRenderTables();
                     }
@@ -886,6 +922,24 @@ async function handleConfirmIngest() {
             finishBanner.classList.remove("hidden");
             btnConfirm.disabled = false;
         }
+
+        // Instantly save to local persistent cache & update UI search tables
+        const ingestedEntry = {
+            track_id: finalPayload.track_id || ("TRK_EDGE_" + Date.now().toString(36).toUpperCase()),
+            track_name: finalPayload.track_name,
+            artist_name: finalPayload.artist_name,
+            album_name: finalPayload.album_name || "Single",
+            genre: finalPayload.genre || "Pop",
+            popularity: parseInt(finalPayload.popularity) || 85,
+            duration_sec: Math.round((parseInt(finalPayload.duration_ms) || 200000) / 1000),
+            year: parseInt(finalPayload.year) || 2024,
+            _is_newly_ingested: true
+        };
+        saveIngestedTrack(ingestedEntry);
+        if (!cachedCatalogIndex.popular_tracks) cachedCatalogIndex.popular_tracks = [];
+        cachedCatalogIndex.popular_tracks.unshift(ingestedEntry);
+        cachedTopTracks.unshift(ingestedEntry);
+        applyFiltersAndRenderTables();
     } catch (err) {
         alert("Ingestion Error: " + err.message);
         btnConfirm.disabled = false;
