@@ -1,14 +1,34 @@
+export async function onRequestOptions() {
+  return new Response(null, {
+    status: 204,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type"
+    }
+  });
+}
+
 export async function onRequestPost(context) {
   try {
-    const body = await context.request.json();
+    let body = {};
+    try {
+      body = await context.request.json();
+    } catch (e) {
+      body = {};
+    }
+
     const songName = (body.song_name || "").trim();
-    const artistHint = (body.artist_hint || "").trim();
-    const apiKey = (body.groq_key || "").trim() || context.env?.GROQ_API_KEY || "";
+    const artistHint = (body.artist || body.artist_hint || "").trim();
+    const apiKey = (body.api_key || body.groq_key || "").trim() || context.env?.GROQ_API_KEY || "";
 
     if (!songName) {
       return new Response(JSON.stringify({ success: false, error: "Song name is required." }), {
         status: 400,
-        headers: { "Content-Type": "application/json" }
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*"
+        }
       });
     }
 
@@ -29,7 +49,10 @@ export async function onRequestPost(context) {
           year: 2024
         }
       }), {
-        headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" }
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*"
+        }
       });
     }
 
@@ -85,13 +108,19 @@ Return ONLY valid JSON matching this exact structure:
         year: Number(meta.year) || 2024
       }
     }), {
-      headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" }
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*"
+      }
     });
 
   } catch (err) {
     return new Response(JSON.stringify({ success: false, error: err.message }), {
       status: 500,
-      headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" }
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*"
+      }
     });
   }
 }
