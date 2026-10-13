@@ -1,0 +1,63 @@
+# Logs and temporary files
+logs/
+*.log
+/tmp/
+*.tmp
+*.pid
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+ENV/
+
+# Big Data & Engine local outputs / caches
+metastore_db/
+derby.log
+.sparkStaging/
+warehouse/
+hive_metastore/
+spark-warehouse/
+results/*.tmp
+
+# Java build artifacts
+hadoop/mapreduce/build/
+*.class
+*.jar
+!hadoop/mapreduce/lib/*.jar
+
+# IDE & Editor caches
+.idea/
+.vscode/
+*.swp
+*~
+
+# Operating system artifacts
+.DS_Store
+Thumbs.db
+
+# Secrets & Environment variables
+.env
+*.env
+
+# Large raw source corpora & backup files (keep only data/sample/music_tracks.csv)
+data/spotify_tracks_114k.csv
+data/tamil_songs_*.csv
+data/*_backup.csv
+data/sample/*_backup.csv
+
+# Local NoSQL store dumps & SQLite binaries
+data/nosql_store/
+*.db
+
+# Intermediate pipeline staging runs, archives, and scratch caches
+results/staging/
+results/datacenter_export/
+results/scratch/
+*.crc
+.*.crc

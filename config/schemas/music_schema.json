@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MusicTrackRecord",
+  "description": "Schema contract for Spotify Music Track and Popularity Analytics",
+  "type": "object",
+  "properties": {
+    "track_id": {
+      "type": "string",
+      "description": "Unique identifier for the track (e.g., Spotify track ID)",
+      "minLength": 4
+    },
+    "track_name": {
+      "type": "string",
+      "description": "Title of the musical track",
+      "minLength": 1
+    },
+    "artist_name": {
+      "type": "string",
+      "description": "Primary artist or band name",
+      "minLength": 1
+    },
+    "album_name": {
+      "type": "string",
+      "description": "Name of the containing album or single release"
+    },
+    "genre": {
+      "type": "string",
+      "description": "Primary musical genre categorization",
+      "minLength": 1
+    },
+    "popularity": {
+      "type": "integer",
+      "description": "Popularity index calculated by platform algorithms",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "duration_ms": {
+      "type": "integer",
+      "description": "Track duration in milliseconds",
+      "minimum": 1000,
+      "maximum": 3600000
+    },
+    "explicit": {
+      "type": "integer",
+      "description": "Binary flag indicating explicit content (0 = clean, 1 = explicit)",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "year": {
+      "type": "integer",
+      "description": "Release year of the track",
+      "minimum": 1950,
+      "maximum": 2026
+    }
+  },
+  "required": [
+    "track_id",
+    "track_name",
+    "artist_name",
+    "genre",
+    "popularity",
+    "duration_ms",
+    "explicit",
+    "year"
+  ],
+  "additionalProperties": false
+}

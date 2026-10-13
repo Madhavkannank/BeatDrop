@@ -1,0 +1,242 @@
+[
+  {
+    "genre": "Classical",
+    "rank": 1,
+    "track_name": "Oru Murai Vanthu Parthaya",
+    "artist_name": "K.J. Yesudas, Chithra",
+    "popularity": 100,
+    "year": 1993
+  },
+  {
+    "genre": "Classical",
+    "rank": 2,
+    "track_name": "Ladio",
+    "artist_name": "Nikita Gandhi",
+    "popularity": 99,
+    "year": 2015
+  },
+  {
+    "genre": "Classical",
+    "rank": 3,
+    "track_name": "Ninaithu Ninaithu Paarthal",
+    "artist_name": "Shreya Ghoshal, Yuvan Shankar Raja",
+    "popularity": 99,
+    "year": 2004
+  },
+  {
+    "genre": "Country",
+    "rank": 1,
+    "track_name": "Atlantis",
+    "artist_name": "Seafret",
+    "popularity": 90,
+    "year": 1998
+  },
+  {
+    "genre": "Country",
+    "rank": 2,
+    "track_name": "You Proof",
+    "artist_name": "Morgan Wallen",
+    "popularity": 86,
+    "year": 2023
+  },
+  {
+    "genre": "Country",
+    "rank": 3,
+    "track_name": "Wasted On You",
+    "artist_name": "Morgan Wallen",
+    "popularity": 83,
+    "year": 2008
+  },
+  {
+    "genre": "Electronic",
+    "rank": 1,
+    "track_name": "Unholy (feat. Kim Petras)",
+    "artist_name": "Sam Smith;Kim Petras",
+    "popularity": 100,
+    "year": 1995
+  },
+  {
+    "genre": "Electronic",
+    "rank": 2,
+    "track_name": "Irumbile Oru Irudhaiyam",
+    "artist_name": "A.R. Rahman, Kash n' Krissy",
+    "popularity": 98,
+    "year": 2010
+  },
+  {
+    "genre": "Electronic",
+    "rank": 3,
+    "track_name": "I'm Good (Blue)",
+    "artist_name": "David Guetta;Bebe Rexha",
+    "popularity": 98,
+    "year": 1998
+  },
+  {
+    "genre": "Hip-Hop",
+    "rank": 1,
+    "track_name": "Illuminati",
+    "artist_name": "Dabzee, Sushin Shyam",
+    "popularity": 99,
+    "year": 2024
+  },
+  {
+    "genre": "Hip-Hop",
+    "rank": 2,
+    "track_name": "Don-u Don-u Don-u",
+    "artist_name": "Anirudh Ravichander, Alisha Thomas",
+    "popularity": 99,
+    "year": 2015
+  },
+  {
+    "genre": "Hip-Hop",
+    "rank": 3,
+    "track_name": "Quevedo: Bzrp Music Sessions, Vol. 52",
+    "artist_name": "Bizarrap;Quevedo",
+    "popularity": 99,
+    "year": 2001
+  },
+  {
+    "genre": "Indie",
+    "rank": 1,
+    "track_name": "Avalum Naanum",
+    "artist_name": "Vijay Yesudas",
+    "popularity": 99,
+    "year": 2016
+  },
+  {
+    "genre": "Indie",
+    "rank": 2,
+    "track_name": "Enga Pona Raasaa",
+    "artist_name": "Shakthisree Gopalan",
+    "popularity": 99,
+    "year": 2012
+  },
+  {
+    "genre": "Indie",
+    "rank": 3,
+    "track_name": "Nenjukkul Peidhidum",
+    "artist_name": "Hariharan, Devan Ekambaram, V. Prasanna",
+    "popularity": 99,
+    "year": 2008
+  },
+  {
+    "genre": "Jazz",
+    "rank": 1,
+    "track_name": "Just the Two of Us (feat. Bill Withers)",
+    "artist_name": "Grover Washington, Jr.;Bill Withers",
+    "popularity": 77,
+    "year": 2021
+  },
+  {
+    "genre": "Jazz",
+    "rank": 2,
+    "track_name": "Virgen",
+    "artist_name": "Adolescent's Orquesta",
+    "popularity": 77,
+    "year": 2004
+  },
+  {
+    "genre": "Jazz",
+    "rank": 3,
+    "track_name": "Vivir Mi Vida",
+    "artist_name": "Marc Anthony",
+    "popularity": 76,
+    "year": 2020
+  },
+  {
+    "genre": "Metal",
+    "rank": 1,
+    "track_name": "In the End",
+    "artist_name": "Linkin Park",
+    "popularity": 85,
+    "year": 2011
+  },
+  {
+    "genre": "Metal",
+    "rank": 2,
+    "track_name": "Everlong",
+    "artist_name": "Foo Fighters",
+    "popularity": 84,
+    "year": 2006
+  },
+  {
+    "genre": "Metal",
+    "rank": 3,
+    "track_name": "Numb",
+    "artist_name": "Linkin Park",
+    "popularity": 83,
+    "year": 2006
+  },
+  {
+    "genre": "Pop",
+    "rank": 1,
+    "track_name": "Hey Minnale",
+    "artist_name": "Haricharan, Shweta Mohan, G.V. Prakash Kumar",
+    "popularity": 99,
+    "year": 2024
+  },
+  {
+    "genre": "Pop",
+    "rank": 2,
+    "track_name": "Whistle Podu",
+    "artist_name": "Thalapathy Vijay, Yuvan Shankar Raja",
+    "popularity": 99,
+    "year": 2024
+  },
+  {
+    "genre": "Pop",
+    "rank": 3,
+    "track_name": "Kaavaalaa",
+    "artist_name": "Anirudh Ravichander, Shilpa Rao, Arunraja Kamaraj",
+    "popularity": 99,
+    "year": 2023
+  },
+  {
+    "genre": "R&B",
+    "rank": 1,
+    "track_name": "Kadal Raasa Naan",
+    "artist_name": "Yuvan Shankar Raja",
+    "popularity": 99,
+    "year": 2012
+  },
+  {
+    "genre": "R&B",
+    "rank": 2,
+    "track_name": "Roja Roja",
+    "artist_name": "P. Unnikrishnan",
+    "popularity": 99,
+    "year": 1999
+  },
+  {
+    "genre": "R&B",
+    "rank": 3,
+    "track_name": "Indiraiyo Ival Sundariyo",
+    "artist_name": "Sunandha, Kalyani Menon, Minmini",
+    "popularity": 99,
+    "year": 1994
+  },
+  {
+    "genre": "Rock",
+    "rank": 1,
+    "track_name": "Hukum - Thalaivar Alappara",
+    "artist_name": "Anirudh Ravichander, Super Subu",
+    "popularity": 99,
+    "year": 2023
+  },
+  {
+    "genre": "Rock",
+    "rank": 2,
+    "track_name": "Kutti Story",
+    "artist_name": "Anirudh Ravichander, Vijay",
+    "popularity": 99,
+    "year": 2020
+  },
+  {
+    "genre": "Rock",
+    "rank": 3,
+    "track_name": "Mr Mr Local",
+    "artist_name": "Hiphop Tamizha, Paul B Sailus, SanGan, Palaniammal",
+    "popularity": 99,
+    "year": 2019
+  }
+]

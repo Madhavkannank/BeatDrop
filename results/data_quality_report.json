@@ -1,0 +1,36 @@
+{
+  "report_title": "Music Analytics Platform - Observability & Data Quality Audit",
+  "generated_at": "2026-09-27T16:57:53.228320+00:00",
+  "pipeline_status": "SUCCESS",
+  "total_runtime_seconds": 827,
+  "data_quality": {
+    "total_records_ingested": 5060,
+    "valid_records_admitted": 5000,
+    "quarantined_records": 60,
+    "duplicate_records_dropped": 10,
+    "null_records_detected": 11,
+    "data_quality_score_percent": 98.81,
+    "quarantine_reasons_breakdown": {
+      "MISSING_REQUIRED": 11,
+      "YEAR_OUT": 10,
+      "DURATION_OUT": 15,
+      "POPULARITY_OUT": 13,
+      "DUPLICATE_TRACK": 10,
+      "INVALID_EXPLICIT": 1
+    }
+  },
+  "hdfs_storage_lake": {
+    "/music_project/raw": "468.7 K  468.7 K  /music_project/raw",
+    "/music_project/processed": "464.4 K  464.4 K  /music_project/processed",
+    "/music_project/curated": "518.2 K  518.2 K  /music_project/curated",
+    "/music_project/analytics": "7.0 K  7.0 K  /music_project/analytics",
+    "/music_project/quarantine": "20.1 K  20.1 K  /music_project/quarantine"
+  },
+  "analytics_kpis": {
+    "total_genres_analyzed": 10,
+    "top_popular_genre": "Pop",
+    "top_popular_genre_avg_score": 71.86,
+    "lowest_popular_genre": "Metal",
+    "lowest_popular_genre_avg_score": 51.16
+  }
+}

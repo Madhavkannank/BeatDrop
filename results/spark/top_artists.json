@@ -1,0 +1,162 @@
+[
+  {
+    "artist_name": "K. J. Yesudas, S. Janaki",
+    "total_tracks": 16,
+    "avg_popularity": 87.63,
+    "avg_duration_sec": 247.1,
+    "latest_year": 1994,
+    "earliest_year": 1977
+  },
+  {
+    "artist_name": "Bad Bunny",
+    "total_tracks": 22,
+    "avg_popularity": 85.36,
+    "avg_duration_sec": 187.0,
+    "latest_year": 2023,
+    "earliest_year": 1996
+  },
+  {
+    "artist_name": "Malaysia Vasudevan",
+    "total_tracks": 24,
+    "avg_popularity": 84.71,
+    "avg_duration_sec": 241.4,
+    "latest_year": 1997,
+    "earliest_year": 1979
+  },
+  {
+    "artist_name": "K. S. Chithra, Mano",
+    "total_tracks": 17,
+    "avg_popularity": 84.47,
+    "avg_duration_sec": 239.5,
+    "latest_year": 2000,
+    "earliest_year": 1987
+  },
+  {
+    "artist_name": "S. Janaki",
+    "total_tracks": 55,
+    "avg_popularity": 83.67,
+    "avg_duration_sec": 247.5,
+    "latest_year": 1998,
+    "earliest_year": 1961
+  },
+  {
+    "artist_name": "S. Janaki, S. P. Balasubramaniam",
+    "total_tracks": 62,
+    "avg_popularity": 83.31,
+    "avg_duration_sec": 238.6,
+    "latest_year": 1994,
+    "earliest_year": 1974
+  },
+  {
+    "artist_name": "Mano",
+    "total_tracks": 20,
+    "avg_popularity": 82.95,
+    "avg_duration_sec": 245.3,
+    "latest_year": 1999,
+    "earliest_year": 1987
+  },
+  {
+    "artist_name": "K. J. Yesudas",
+    "total_tracks": 54,
+    "avg_popularity": 82.19,
+    "avg_duration_sec": 241.7,
+    "latest_year": 2020,
+    "earliest_year": 1974
+  },
+  {
+    "artist_name": "S. P. Balasubramaniam, Swarnalatha",
+    "total_tracks": 15,
+    "avg_popularity": 81.6,
+    "avg_duration_sec": 251.8,
+    "latest_year": 2002,
+    "earliest_year": 1991
+  },
+  {
+    "artist_name": "Ilaiyaraaja",
+    "total_tracks": 90,
+    "avg_popularity": 81.01,
+    "avg_duration_sec": 248.5,
+    "latest_year": 2022,
+    "earliest_year": 1977
+  },
+  {
+    "artist_name": "Swarnalatha",
+    "total_tracks": 15,
+    "avg_popularity": 80.93,
+    "avg_duration_sec": 247.6,
+    "latest_year": 2017,
+    "earliest_year": 1988
+  },
+  {
+    "artist_name": "S. P. Balasubramaniam",
+    "total_tracks": 150,
+    "avg_popularity": 80.93,
+    "avg_duration_sec": 248.7,
+    "latest_year": 2020,
+    "earliest_year": 1974
+  },
+  {
+    "artist_name": "K. S. Chithra",
+    "total_tracks": 39,
+    "avg_popularity": 80.59,
+    "avg_duration_sec": 237.9,
+    "latest_year": 2020,
+    "earliest_year": 1985
+  },
+  {
+    "artist_name": "K. S. Chithra, S. P. Balasubramaniam",
+    "total_tracks": 40,
+    "avg_popularity": 78.48,
+    "avg_duration_sec": 236.4,
+    "latest_year": 2010,
+    "earliest_year": 1988
+  },
+  {
+    "artist_name": "Anirudh Ravichander",
+    "total_tracks": 56,
+    "avg_popularity": 78.3,
+    "avg_duration_sec": 199.4,
+    "latest_year": 2023,
+    "earliest_year": 1995
+  },
+  {
+    "artist_name": "Hariharan",
+    "total_tracks": 50,
+    "avg_popularity": 76.34,
+    "avg_duration_sec": 256.1,
+    "latest_year": 2019,
+    "earliest_year": 1992
+  },
+  {
+    "artist_name": "Jikki",
+    "total_tracks": 16,
+    "avg_popularity": 76.31,
+    "avg_duration_sec": 225.5,
+    "latest_year": 1992,
+    "earliest_year": 1952
+  },
+  {
+    "artist_name": "P. Susheela",
+    "total_tracks": 94,
+    "avg_popularity": 75.8,
+    "avg_duration_sec": 247.2,
+    "latest_year": 2013,
+    "earliest_year": 1955
+  },
+  {
+    "artist_name": "Sid Sriram",
+    "total_tracks": 15,
+    "avg_popularity": 75.0,
+    "avg_duration_sec": 262.1,
+    "latest_year": 2020,
+    "earliest_year": 2013
+  },
+  {
+    "artist_name": "Frank Ocean",
+    "total_tracks": 17,
+    "avg_popularity": 74.71,
+    "avg_duration_sec": 243.5,
+    "latest_year": 2022,
+    "earliest_year": 1995
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "_id": "Sam Smith;Kim Petras",
+    "total_tracks": 1,
+    "avg_popularity": 100.0
+  },
+  {
+    "_id": "Srinivas, Gopika Poornima",
+    "total_tracks": 1,
+    "avg_popularity": 99.0
+  },
+  {
+    "_id": "Anirudh Ravichander, Vijay",
+    "total_tracks": 1,
+    "avg_popularity": 99.0
+  },
+  {
+    "_id": "Arvind Swamy, Hiphop Tamizha",
+    "total_tracks": 1,
+    "avg_popularity": 99.0
+  },
+  {
+    "_id": "Jayam Ravi",
+    "total_tracks": 1,
+    "avg_popularity": 99.0
+  }
+]

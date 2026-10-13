@@ -1,0 +1,82 @@
+[
+  {
+    "_id": "R&B",
+    "total_tracks": 5157,
+    "avg_popularity": 46.578049253441925,
+    "min_popularity": 0,
+    "max_popularity": 99,
+    "avg_duration_sec": 245.02117510180335
+  },
+  {
+    "_id": "Indie",
+    "total_tracks": 8860,
+    "avg_popularity": 44.67189616252821,
+    "min_popularity": 0,
+    "max_popularity": 99,
+    "avg_duration_sec": 212.38695259593678
+  },
+  {
+    "_id": "Rock",
+    "total_tracks": 7469,
+    "avg_popularity": 40.48292944169233,
+    "min_popularity": 0,
+    "max_popularity": 99,
+    "avg_duration_sec": 222.6172847770786
+  },
+  {
+    "_id": "Classical",
+    "total_tracks": 2597,
+    "avg_popularity": 36.55987678090104,
+    "min_popularity": 0,
+    "max_popularity": 100,
+    "avg_duration_sec": 227.01185983827494
+  },
+  {
+    "_id": "Pop",
+    "total_tracks": 36929,
+    "avg_popularity": 36.50770397248775,
+    "min_popularity": 0,
+    "max_popularity": 99,
+    "avg_duration_sec": 223.41460911478782
+  },
+  {
+    "_id": "Hip-Hop",
+    "total_tracks": 2520,
+    "avg_popularity": 34.852777777777774,
+    "min_popularity": 0,
+    "max_popularity": 99,
+    "avg_duration_sec": 273.1274603174603
+  },
+  {
+    "_id": "Electronic",
+    "total_tracks": 13162,
+    "avg_popularity": 32.48632426682875,
+    "min_popularity": 0,
+    "max_popularity": 100,
+    "avg_duration_sec": 263.6624145266677
+  },
+  {
+    "_id": "Metal",
+    "total_tracks": 5424,
+    "avg_popularity": 29.3242994100295,
+    "min_popularity": 0,
+    "max_popularity": 81,
+    "avg_duration_sec": 230.98593289085545
+  },
+  {
+    "_id": "Country",
+    "total_tracks": 3109,
+    "avg_popularity": 27.03698938565455,
+    "min_popularity": 0,
+    "max_popularity": 90,
+    "avg_duration_sec": 215.11958829205534
+  },
+  {
+    "_id": "Jazz",
+    "total_tracks": 217,
+    "avg_popularity": 21.792626728110598,
+    "min_popularity": 0,
+    "max_popularity": 77,
+    "avg_duration_sec": 212.63502304147468
+  }
+]

@@ -1,0 +1,58 @@
+app:
+  name: "music-analytics-platform"
+  version: "1.0.0"
+  title: "Music Track & Popularity Analytics Platform"
+  description: "Enterprise-grade big data pipeline utilizing HDFS, MapReduce, Pig, Hive, and PySpark"
+
+environment:
+  mode: "pseudo-distributed"
+  java_home: "/home/maddy/opt/jdk-17"
+  hadoop_home: "/home/maddy/opt/hadoop-3.5.0"
+  pig_home: "/home/maddy/opt/pig-0.17.0"
+  hive_home: "/home/maddy/opt/hive-4.0.0"
+  spark_home: "/home/maddy/opt/spark-3.5.3"
+  fs_default_fs: "hdfs://localhost:9000"
+
+hdfs:
+  base_dir: "/music_project"
+  raw_dir: "/music_project/raw"
+  processed_dir: "/music_project/processed"
+  curated_dir: "/music_project/curated"
+  analytics_dir: "/music_project/analytics"
+  quarantine_dir: "/music_project/quarantine"
+
+dataset:
+  name: "spotify_tracks"
+  raw_input_path: "data/sample/music_tracks.csv"
+  schema_path: "config/schemas/music_schema.json"
+  format: "csv"
+  delimiter: ","
+  has_header: true
+  expected_columns:
+    - track_id
+    - track_name
+    - artist_name
+    - album_name
+    - genre
+    - popularity
+    - duration_ms
+    - explicit
+    - year
+
+validation:
+  popularity_min: 0
+  popularity_max: 100
+  duration_min_ms: 1000
+  duration_max_ms: 3600000
+  quarantine_threshold_ratio: 0.3
+
+spark:
+  master: "local[*]"
+  app_name: "MusicAnalyticsSpark"
+  driver_memory: "2g"
+  executor_memory: "2g"
+
+results:
+  output_dir: "results"
+  dashboard_dir: "dashboard"
+  logs_dir: "logs"

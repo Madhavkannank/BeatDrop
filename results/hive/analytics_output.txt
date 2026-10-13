@@ -1,0 +1,77 @@
++--------------------------------+--------------+-----------------+-----------------+-----------------+
+|          artist_name           | track_count  | avg_popularity  | min_popularity  | max_popularity  |
++--------------------------------+--------------+-----------------+-----------------+-----------------+
+| K. J. Yesudas, S. Janaki       | 16           | 87.63           | 79              | 96              |
+| Hiphop Tamizha                 | 12           | 86.83           | 59              | 98              |
+| A. R. Rahman                   | 13           | 86.62           | 80              | 95              |
+| Bad Bunny                      | 17           | 86.0            | 78              | 97              |
+| Malaysia Vasudevan, S. Janaki  | 11           | 85.73           | 75              | 96              |
+| Malaysia Vasudevan             | 24           | 84.71           | 62              | 95              |
+| K. S. Chithra, Mano            | 17           | 84.47           | 73              | 95              |
+| Mano, S. Janaki                | 14           | 84.21           | 75              | 94              |
+| Hariharan, Sadhana Sargam      | 13           | 83.77           | 72              | 95              |
+| S. Janaki                      | 55           | 83.67           | 63              | 96              |
++--------------------------------+--------------+-----------------+-----------------+-----------------+
++--------------+---------------+-----------------------+-------------------------+-----------------------+
+|    genre     | total_tracks  | avg_genre_popularity  | avg_genre_duration_sec  | explicit_track_count  |
++--------------+---------------+-----------------------+-------------------------+-----------------------+
+| Rock         | 4300          | 45.12                 | 232.8                   | 325                   |
+| R&B          | 4300          | 48.72                 | 256.8                   | 350                   |
+| Pop          | 4300          | 51.54                 | 241.5                   | 21                    |
+| Metal        | 4300          | 26.07                 | 227.8                   | 840                   |
+| Indie        | 4300          | 57.66                 | 218.0                   | 275                   |
+| Hip-Hop      | 4300          | 37.11                 | 239.0                   | 700                   |
+| Electronic   | 4300          | 40.47                 | 232.2                   | 312                   |
+| Classical    | 4300          | 36.66                 | 207.9                   | 9                     |
+| Country      | 3848          | 30.05                 | 214.2                   | 85                    |
+| Jazz         | 3226          | 32.58                 | 217.8                   | 76                    |
+| GABBER_CORE  | 10            | 50.0                  | 200.0                   | 0                     |
++--------------+---------------+-----------------------+-------------------------+-----------------------+
++-----------------------------------+--------------+-----------------+
+|            artist_name            | track_count  | avg_popularity  |
++-----------------------------------+--------------+-----------------+
+| George Jones                      | 214          | 15.9            |
+| S. P. Balasubramaniam             | 150          | 80.93           |
+| The Beatles                       | 149          | 60.32           |
+| T. M. Soundararajan               | 137          | 74.15           |
+| Hank Williams                     | 114          | 13.68           |
+| P. Susheela, T. M. Soundararajan  | 97           | 74.66           |
+| Charlie Brown Jr.                 | 96           | 39.43           |
+| P. Susheela                       | 94           | 75.8            |
+| Ilaiyaraaja                       | 90           | 81.01           |
+| Pink Floyd                        | 84           | 55.21           |
++-----------------------------------+--------------+-----------------+
++--------------+-----------------------+-------------------------+
+|    genre     | avg_genre_popularity  | avg_genre_duration_sec  |
++--------------+-----------------------+-------------------------+
+| Indie        | 57.66                 | 218.0                   |
+| Pop          | 51.54                 | 241.5                   |
+| GABBER_CORE  | 50.0                  | 200.0                   |
+| R&B          | 48.72                 | 256.8                   |
+| Rock         | 45.12                 | 232.8                   |
+| Electronic   | 40.47                 | 232.2                   |
+| Hip-Hop      | 37.11                 | 239.0                   |
+| Classical    | 36.66                 | 207.9                   |
+| Jazz         | 32.58                 | 217.8                   |
+| Country      | 30.05                 | 214.2                   |
+| Metal        | 26.07                 | 227.8                   |
++--------------+-----------------------+-------------------------+
++------------------+-----------------------------+----------------------------------------------------+------------+-------------+-------+
+|     track_id     |         track_name          |                    artist_name                     |   genre    | popularity  | year  |
++------------------+-----------------------------+----------------------------------------------------+------------+-------------+-------+
+| TRKA117D3B5FED3  | Oru Murai Vanthu Parthaya   | K.J. Yesudas, Chithra                              | Classical  | 100         | 1993  |
+| TRKD4272F68A088  | Whistle Podu                | Thalapathy Vijay, Yuvan Shankar Raja               | Pop        | 99          | 2024  |
+| TRKA4954F005F76  | Hey Minnale                 | Haricharan, Shweta Mohan, G.V. Prakash Kumar       | Pop        | 99          | 2024  |
+| TRK3FBB1B6087D0  | Illuminati                  | Dabzee, Sushin Shyam                               | Hip-Hop    | 99          | 2024  |
+| TRKF7FC3FA748B8  | Naa Ready                   | Thalapathy Vijay, Anirudh Ravichander, Asal Kolaar | Pop        | 99          | 2023  |
+| TRK2591538A57CF  | Kaavaalaa                   | Anirudh Ravichander, Shilpa Rao, Arunraja Kamaraj  | Pop        | 99          | 2023  |
+| TRK7E75410F3B96  | Hukum - Thalaivar Alappara  | Anirudh Ravichander, Super Subu                    | Rock       | 99          | 2023  |
+| TRKDE9A99468F2D  | Pathala Pathala             | Kamal Haasan, Anirudh Ravichander                  | Pop        | 99          | 2022  |
+| TRK3F5A6B9B77E2  | Arabic Kuthu                | Anirudh Ravichander, Jonita Gandhi                 | Pop        | 99          | 2022  |
+| TRK6B95111D47F6  | Vaathi Coming               | Anirudh Ravichander, Gana Balachandar              | Pop        | 99          | 2021  |
+| TRK16781CA16F49  | Thani Vazhi                 | Yogi B, Anirudh Ravichander, Shakthisree Gopalan   | Pop        | 99          | 2020  |
+| TRKCF47AEABD1C3  | Kutti Story                 | Anirudh Ravichander, Vijay                         | Rock       | 99          | 2020  |
+| TRK31D8DC9F4D5F  | Mr Mr Local                 | Hiphop Tamizha, Paul B Sailus, SanGan, Palaniammal | Rock       | 99          | 2019  |
+| TRKAAA46366FBE3  | Thalai Viduthalai           | Anirudh Ravichander, Harish Swaminathan, Ajith Kumar | Rock       | 99          | 2017  |
+| TRK22AE3015E027  | Avalum Naanum               | Vijay Yesudas                                      | Indie      | 99          | 2016  |
++------------------+-----------------------------+----------------------------------------------------+------------+-------------+-------+

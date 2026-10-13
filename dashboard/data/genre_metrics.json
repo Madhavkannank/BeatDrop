@@ -1,0 +1,82 @@
+[
+  {
+    "genre": "R&B",
+    "total_tracks": 5524,
+    "avg_popularity": 46.71,
+    "min_popularity": 0,
+    "max_popularity": 99,
+    "avg_duration_sec": 247.7
+  },
+  {
+    "genre": "Indie",
+    "total_tracks": 9150,
+    "avg_popularity": 44.82,
+    "min_popularity": 0,
+    "max_popularity": 99,
+    "avg_duration_sec": 212.6
+  },
+  {
+    "genre": "Rock",
+    "total_tracks": 7496,
+    "avg_popularity": 40.75,
+    "min_popularity": 0,
+    "max_popularity": 99,
+    "avg_duration_sec": 219.4
+  },
+  {
+    "genre": "Classical",
+    "total_tracks": 2897,
+    "avg_popularity": 37.07,
+    "min_popularity": 0,
+    "max_popularity": 100,
+    "avg_duration_sec": 229.4
+  },
+  {
+    "genre": "Pop",
+    "total_tracks": 29958,
+    "avg_popularity": 36.65,
+    "min_popularity": 0,
+    "max_popularity": 99,
+    "avg_duration_sec": 221.9
+  },
+  {
+    "genre": "Hip-Hop",
+    "total_tracks": 4132,
+    "avg_popularity": 35.37,
+    "min_popularity": 0,
+    "max_popularity": 99,
+    "avg_duration_sec": 249.9
+  },
+  {
+    "genre": "Electronic",
+    "total_tracks": 13816,
+    "avg_popularity": 33.05,
+    "min_popularity": 0,
+    "max_popularity": 100,
+    "avg_duration_sec": 263.1
+  },
+  {
+    "genre": "Jazz",
+    "total_tracks": 3836,
+    "avg_popularity": 31.28,
+    "min_popularity": 0,
+    "max_popularity": 77,
+    "avg_duration_sec": 230.5
+  },
+  {
+    "genre": "Metal",
+    "total_tracks": 5855,
+    "avg_popularity": 30.72,
+    "min_popularity": 0,
+    "max_popularity": 85,
+    "avg_duration_sec": 232.8
+  },
+  {
+    "genre": "Country",
+    "total_tracks": 2924,
+    "avg_popularity": 26.37,
+    "min_popularity": 0,
+    "max_popularity": 90,
+    "avg_duration_sec": 214.3
+  }
+]

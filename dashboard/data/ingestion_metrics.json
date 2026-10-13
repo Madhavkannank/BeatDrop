@@ -1,0 +1,13 @@
+{
+  "total_records": 85638,
+  "valid_records": 85588,
+  "invalid_records": 50,
+  "duplicate_records": 0,
+  "null_records": 10,
+  "processing_time_seconds": 0.295,
+  "data_quality_score": 99.94,
+  "ingestion_timestamp": "2026-10-13T16:13:13.415060+00:00",
+  "hdfs_raw_path": "/music_project/raw/music_tracks_raw.csv",
+  "hdfs_processed_path": "/music_project/processed/tracks_processed.tsv",
+  "hdfs_quarantine_path": "/music_project/quarantine/tracks_quarantine.csv"
+}
