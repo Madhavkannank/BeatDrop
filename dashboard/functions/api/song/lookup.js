@@ -33,7 +33,7 @@ export async function onRequestPost(context) {
     }
 
     if (!apiKey) {
-      // Mock / fallback metadata when no key is supplied
+      // Fallback preview when no key is supplied
       return new Response(JSON.stringify({
         success: true,
         source: "cloudflare_mock",
@@ -70,28 +70,49 @@ Return ONLY valid JSON matching this exact structure:
   "year": integer 4-digit release year
 }`;
 
-    const groqRes = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        "Authorization": `Bearer ${apiKey}`,
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        model: "llama-3.3-70b-versatile",
-        messages: [{ role: "user", content: prompt }],
-        temperature: 0.1,
-        response_format: { type: "json_object" }
-      })
-    });
+    const models = ["openai/gpt-oss-120b", "openai/gpt-oss-20b", "qwen/qwen3.8-27b"];
+    let lastError = null;
+    let meta = null;
 
-    if (!groqRes.ok) {
-      const errText = await groqRes.text();
-      throw new Error(`Groq API returned ${groqRes.status}: ${errText}`);
+    for (const model of models) {
+      try {
+        const groqRes = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+          method: "POST",
+          headers: {
+            "Authorization": `Bearer ${apiKey}`,
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            model: model,
+            messages: [
+              { role: "system", content: "You are a music metadata engine. Return valid JSON only." },
+              { role: "user", content: prompt }
+            ],
+            temperature: 0.1,
+            response_format: { type: "json_object" }
+          })
+        });
+
+        if (!groqRes.ok) {
+          const errText = await groqRes.text();
+          lastError = new Error(`Groq ${model} (${groqRes.status}): ${errText}`);
+          continue;
+        }
+
+        const groqData = await groqRes.json();
+        const content = groqData.choices?.[0]?.message?.content || "{}";
+        meta = JSON.parse(content);
+        if (meta && meta.track_name) {
+          break;
+        }
+      } catch (err) {
+        lastError = err;
+      }
     }
 
-    const groqData = await groqRes.json();
-    const content = groqData.choices?.[0]?.message?.content || "{}";
-    const meta = JSON.parse(content);
+    if (!meta) {
+      throw lastError || new Error("Failed to extract metadata from Groq models.");
+    }
 
     return new Response(JSON.stringify({
       success: true,
