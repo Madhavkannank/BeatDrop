@@ -8,14 +8,6 @@
     "earliest_year": 1977
   },
   {
-    "artist_name": "Bad Bunny",
-    "total_tracks": 22,
-    "avg_popularity": 85.36,
-    "avg_duration_sec": 187.0,
-    "latest_year": 2023,
-    "earliest_year": 1996
-  },
-  {
     "artist_name": "Malaysia Vasudevan",
     "total_tracks": 24,
     "avg_popularity": 84.71,
@@ -46,6 +38,14 @@
     "avg_duration_sec": 238.6,
     "latest_year": 1994,
     "earliest_year": 1974
+  },
+  {
+    "artist_name": "Bad Bunny",
+    "total_tracks": 25,
+    "avg_popularity": 82.96,
+    "avg_duration_sec": 184.6,
+    "latest_year": 2023,
+    "earliest_year": 1996
   },
   {
     "artist_name": "Mano",
@@ -112,14 +112,6 @@
     "earliest_year": 1988
   },
   {
-    "artist_name": "Anirudh Ravichander",
-    "total_tracks": 56,
-    "avg_popularity": 78.3,
-    "avg_duration_sec": 199.4,
-    "latest_year": 2023,
-    "earliest_year": 1995
-  },
-  {
     "artist_name": "Hariharan",
     "total_tracks": 50,
     "avg_popularity": 76.34,
@@ -158,5 +150,13 @@
     "avg_duration_sec": 243.5,
     "latest_year": 2022,
     "earliest_year": 1995
+  },
+  {
+    "artist_name": "P. Susheela, T. M. Soundararajan",
+    "total_tracks": 97,
+    "avg_popularity": 74.66,
+    "avg_duration_sec": 251.8,
+    "latest_year": 1977,
+    "earliest_year": 1955
   }
 ]

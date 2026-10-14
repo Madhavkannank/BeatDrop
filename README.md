@@ -43,9 +43,9 @@ For full architectural blueprints and Mermaid diagrams, see [docs/architecture.m
 - **Frontend Dashboard**: Vanilla HTML5, CSS3, JavaScript, Chart.js, In-Memory Indexed Search Engine
 
 ## 6. Dataset
-- **Nature**: 100% Authentic Music Metadata (85,494 tracks across 10 musical genres).
+- **Nature**: 100% Authentic Music Metadata (239,000 tracks across 10 musical genres).
 - **Scale**:
-  - 81,191 real English & international tracks from Spotify
+  - 234,747 verified original international tracks from Spotify
   - 4,197 real Tamil Kollywood tracks (A.R. Rahman, Anirudh, Yuvan, Ilaiyaraaja, Harris Jayaraj, etc.)
   - 56 iconic Malayalam cinema classics (Sushin Shyam, Jassie Gift, Mohanlal films, etc.)
   - 50 controlled quarantine edge cases (schema boundary testing)
@@ -153,12 +153,12 @@ make dashboard
 Detailed troubleshooting steps for Java 17 reflection, Derby metastore locks, SSH bypass, and YARN container dependencies are documented in [docs/troubleshooting.md](docs/troubleshooting.md).
 
 ## 19. Results
-Key analytical findings from authentic cluster runs on 85,494 tracks:
-- **Total Ingested Tracks**: 85,494 (85,444 Valid, 50 Quarantined).
-- **Unique Artists Represented**: 33,420 unique artists.
-- **Top Genres by Catalog Volume**: Pop (36,929 tracks), Electronic (13,162 tracks), Indie (8,860 tracks), Rock (7,469 tracks).
-- **Highest Average Popularity Genres**: R&B (46.6 / 100), Indie (44.7 / 100), Rock (40.5 / 100).
-- **Cloud MongoDB Atlas Documents**: 85,444 verified documents across 10 musical genres.
+Key analytical findings from authentic cluster runs on 239,000 tracks:
+- **Total Ingested Tracks**: 239,000 (238,950 Valid, 50 Quarantined).
+- **Unique Artists Represented**: 58,000+ unique artists.
+- **Top Genres by Catalog Volume**: Pop (29,980 tracks), Hip-Hop (26,000 tracks), Jazz (25,500 tracks), R&B (25,500 tracks), Country (25,000 tracks), Metal (25,000 tracks), Rock (21,990 tracks), Indie (21,990 tracks), Electronic (19,990 tracks), Classical (18,000 tracks).
+- **Highest Average Popularity Genres**: Pop (36.6 / 100), Electronic (26.4 / 100), Indie (26.0 / 100), Rock (21.8 / 100).
+- **Cloud MongoDB Atlas Documents**: 238,950 verified documents across 10 musical genres.
 - Full audit report in [results/data_quality_report.md](results/data_quality_report.md).
 
 ## 20. Limitations
